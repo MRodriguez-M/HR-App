@@ -9,5 +9,23 @@ package hrapp;
  * @author Melissa
  */
 public class Department {
+    private String deptName;
+    private Employee[] employees;
     
+    public Department(String deptName) {
+        this.deptName = deptName;
+    }
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+    
+    @Override
+    public String toString() {
+        return "Department Name: " + getDeptName();
+    }
 }
