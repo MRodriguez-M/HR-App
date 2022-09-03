@@ -17,6 +17,7 @@ public class HRApp {
         System.out.println("Welcome to the HR App!");
         
         Employee e1 = new Employee(1, "Peter P.", 4000);
+        Department d1 = new Department("Research and Development");
     }
     
 }
