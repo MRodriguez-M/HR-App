@@ -28,4 +28,12 @@ public class Department {
     public String toString() {
         return "Department Name: " + getDeptName();
     }
+    
+    public void addEmployees(Employee[] empArr) {
+        employees = empArr;
+    }
+    
+    public Employee[] getEmployees() {
+        return employees;
+    }
 }
