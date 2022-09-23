@@ -50,4 +50,15 @@ public class Department {
         
         return empArr;
     }
+    
+    public int noNullCount() {
+        int count = 0;
+        for(Employee e: employees) {
+            if(e != null) {
+                count++;
+            }
+        }
+        
+        return count;
+    }
 }
