@@ -23,7 +23,7 @@ public class HRApp {
         Employee[] employees = {e1, e2};
         d1.addEmployees(employees);
         
-        System.out.println(d1.toString());
+        System.out.println(d1.toString() + ", Number of Employees: " + d1.noNullCount());
         for(Employee e: d1.getEmployees()) {
             System.out.println("Employee: " + e);
         }
