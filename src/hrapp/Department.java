@@ -34,6 +34,20 @@ public class Department {
     }
     
     public Employee[] getEmployees() {
-        return employees;
+        int count = 0;
+        for(Employee e: employees) {
+            if(e != null) {
+                count++;
+            }
+        }
+        
+        Employee[] empArr = new Employee[count];
+        for(int i = 0; i < employees.length; i++) {
+            if(employees[i] != null) {
+                empArr[i] = employees[i];
+            }
+        }
+        
+        return empArr;
     }
 }
