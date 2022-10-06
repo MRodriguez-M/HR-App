@@ -61,4 +61,14 @@ public class Department {
         
         return count;
     }
+    
+    public Employee getEmployeeID(int idNum) {
+        for(Employee e: employees) {
+            if(e.getId() == idNum) {
+                return e;
+            }
+        }
+        
+        return null;
+    }
 }
