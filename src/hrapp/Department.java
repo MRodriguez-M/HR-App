@@ -81,4 +81,12 @@ public class Department {
         
         return total;
     }
+    
+    public double getAverageSalary() {
+        double average = 0.0;
+        
+        average = getTotalSalary() / employees.length;
+        
+        return average;
+    }
 }
