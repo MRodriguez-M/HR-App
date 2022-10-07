@@ -27,6 +27,8 @@ public class HRApp {
         for(Employee e: d1.getEmployees()) {
             System.out.println("Employee: " + e);
         }
+        
+        System.out.println("Salaries Total: " + d1.getTotalSalary() + ", Average Salary: " + d1.getAverageSalary());
     }
     
 }
